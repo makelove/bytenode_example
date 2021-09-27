@@ -1,0 +1,34 @@
+{
+  "name": "javascript-code-protection-example",
+  "version": "0.0.1",
+  "description": "An example of JavaScript code protection",
+  "main": "index.js",
+  "scripts": {
+    "obfuscate1": "javascript-obfuscator func.js --string-array-encoding rc4",
+    "bytenode1": "bytenode --compile func-obfuscated.js",
+    "obfuscate": "javascript-obfuscator index.js --string-array-encoding rc4",
+    "bytenode": "bytenode --compile index-obfuscated.js",
+    "bytenode:run": "bytenode index-obfuscated.js",
+    "nodec": "nodec build.js --skip-npm-install",
+    "build": "npm run obfuscate && npm run bytenode && npm run nodec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iWinston/javascript-code-protection-example.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "code protection"
+  ],
+  "author": "Winston Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iWinston/javascript-code-protection-example/issues"
+  },
+  "homepage": "https://github.com/iWinston/javascript-code-protection-example#readme",
+  "devDependencies": {
+    "bytenode": "^1.3.3",
+    "javascript-obfuscator": "^0.18.1",
+    "express": "^4.16.1"
+  }
+}
