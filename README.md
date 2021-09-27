@@ -1,6 +1,7 @@
-保护Node.js源代码-obfuscator+bytenode+packer
-bytenode
+## 保护Node.js源代码-obfuscator+bytenode+packer
+- 视频 [【编程】保护Node.js源代码：obfuscator混淆+bytenode字节码编译器+packer打包](https://www.bilibili.com/video/BV1iM4y137Ue/)
 
+- 克隆
 gc git@github.com:iWinston/javascript-code-protection-example.git
 
 ## 如何保护价值上千万的Node.js源代码？
@@ -12,9 +13,11 @@ https://zhuanlan.zhihu.com/p/84386456
 https://github.com/OsamaAbbas/bytenode
 
 通过npm安装javascript-obfuscator 和 bytenode。然后在当前系统下安装 node-packer
-安装 nodec
-https://github.com/pmq20/node-packer
+
 打包成一个执行文件
+安装 nodec ，有点复杂 
+https://github.com/pmq20/node-packer
+下载 nodec-v1.5.0-linux-x64.gz
 
 javascript-obfuscator支持多种混淆技术，可能通过查看文档，按照自己的项目需求，调配选用合适的选项。
 
